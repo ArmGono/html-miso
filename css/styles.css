@@ -1,0 +1,20 @@
+#main-side{
+  width: 440px;
+}
+
+#main-content{
+  width: calc(100% - 440px);
+}
+
+
+.user-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
