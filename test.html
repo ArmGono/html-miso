@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <style>
+    #parent{
+      width:  500px;
+      height: 1500px;
+      border:  1px solid #ccc;
+      position: relative;
+    }
+    #parent::before{
+      content: 'Parent';
+      font-size:  8px;
+    }
+
+    .child:before{
+      content:  'child';
+      font-size:  8px;
+    }
+
+    .child{
+      border:  1px solid #f00;
+      position: relative;
+    }
+    #child{
+      background: #ebebeb;
+      width: 200px;
+      height: 300px;
+    }
+    #child1{
+      background: #fa9312;
+      width: 150px;
+      height: 30px;
+      position: fixed;
+      bottom: 0;
+      right: 300px;
+    }
+    #child div.karmir-klor-ban{
+      width: 30px;
+      height: 30px;
+      background: red;
+      border-radius: 50%;
+      position: relative;
+    }
+    #kk1{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    #kk2{
+      background: #b06b7d;
+    }
+    #child > div.karmir-klor-ban{
+      background: blue;
+    }
+    .k2{
+      background: green;
+    }
+  </style>
+</head>
+<body>
+  <div id="parent">
+    <div id="child" class="child">
+      <div id="kk1" class="karmir-klor-ban k1"></div>
+      <div id="kk2" class="karmir-klor-ban k2"></div>
+    </div>
+    <div id="child1" class="child"></div>
+    <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptas hic dignissimos quia reiciendis architecto quod, rem delectus alias, velit, a soluta nesciunt! Magnam, quos qui pariatur delectus libero numquam?</p></div>
+     <div class="text2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptas hic dignissimos quia reiciendis architecto quod, rem delectus alias, velit, a soluta nesciunt! Magnam, quos qui pariatur delectus libero numquam?</p></div>
+  </div>
+</body>
+</html>

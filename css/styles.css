@@ -1,0 +1,109 @@
+body{
+  font-family: 'robotoregular';
+}
+
+strong, b, .bold {
+  font-family: 'robotobold'
+}
+
+#main-content{
+  width: calc(100% - 308px);
+}
+
+
+.user-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  border:  4px solid #fff;
+  margin-bottom: 20px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+#wrapper {
+  display: flex;
+}
+
+#main-side{
+  background: #5f6d7e;
+  width: 308px;
+  color:  #fff;
+}
+
+#main-side a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-side-inner{
+  position: fixed;
+  top:  0;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+
+#info .name{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#info .description{
+  font-size: 14px;
+}
+
+.container{
+  width: 1300px;
+  margin: 0 auto;
+}
+
+#welcome {
+  height: 645px;
+  background: url(../images/7.jpg) no-repeat 50% 50% / cover;
+  color: #fff;
+}
+
+#welcome .container{
+  padding-top: 260px;
+}
+
+h1{
+  font-family: 'robotobold';
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+#slogan{
+  font-size: 22px;
+  color: white;
+}
+#main-menu{
+  margin-top: 30px;
+}
+#main-menu li{
+  margin-top: 10px;
+}
+#social li{
+  float: left;
+  margin-top: 100px;
+  padding-left: 10px;
+}
+#welcome{
+  padding-left: 80px;
+}
+h2{
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 40px;
+}
+.underline{
+  padding-top: 80px;
+}
+#text-content{
+  padding-left: 80px;
+}
