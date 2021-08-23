@@ -7,7 +7,9 @@ strong, b, .bold {
 }
 
 #main-content{
-  width: calc(100% - 440px);
+  width: calc(100% - 308px);
+  position: sticky;
+  overflow: hidden;
 }
 
 
@@ -17,6 +19,7 @@ strong, b, .bold {
   border-radius: 50%;
   overflow: hidden;
   border:  4px solid #fff;
+  margin-bottom: 20px;
 }
 
 img{
@@ -30,7 +33,7 @@ img{
 
 #main-side{
   background: #5f6d7e;
-  width: 440px;
+  width: 308px;
   color:  #fff;
 }
 
@@ -40,13 +43,18 @@ img{
 }
 
 #main-side-inner{
-  position: sticky;
+  display: flex;
+  position: fixed;
   top:  0;
+  margin-left: 40px;
+  margin-top: 50px;
+  flex-direction: column;
 }
 
 
 #info .name{
   font-size: 18px;
+  margin-bottom: 5px;
 }
 
 #info .description{
@@ -77,4 +85,124 @@ h1{
 #slogan{
   font-size: 22px;
   color: white;
+  width: 800px;
+
+}
+#main-menu{
+  margin-top: 80px;
+}
+#main-menu li{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+#social li{
+  float: left;
+  margin-top: 100px;
+  padding-left: 10px;
+}
+#welcome{
+  padding-left: 80px;
+}
+h2{
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 40px;
+}
+.underline{
+  padding-top: 80px;
+}
+#text-content{
+  padding-left: 80px;
+}
+.content p{
+  width: 800px;
+  margin-top: 40px;
+  color: #777;
+}
+.content a{
+  text-decoration: none;
+  color: #006699;
+}
+
+#gallery p{
+  margin-bottom: 40px;
+}
+.gallery-items{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.gallery-item{
+  width: 300px;
+  border: 1px solid #fff;
+  position: relative;
+  display: block;
+}
+.gallery-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: all .3s;
+}
+.gallery-item div:hover .gallery-text{
+  opacity: 1;
+}
+.gallery-text p{
+  margin-top: 50%;
+}
+
+
+hr{
+  border: 0;
+  width: 100%;
+  height: 4px;
+  background: #dddddd;
+  margin-top: 40px;
+}
+#form p{
+  width: 800px;
+  margin-top: 40px;
+  color: #777;
+  font-size: 14px;
+}
+.contact-form {
+  margin-top: 40px;
+  display: flex;
+}
+
+.contact-form input {
+  width: 100%;
+  border: 1px solid #aaaaaa;
+  padding: 12px;
+  color: #999999;
+  margin-bottom: 30px;
+
+}
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #aaaaaa;
+  padding: 12px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+.contact-form button{
+  width: 120px;
+  height: 40px;
+  background: #5f6d7e;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+}
+#copyright{
+  margin-top: auto;
+  font-size: 12px;
+  color: #5f6d7e;
+  text-align: center;
+  padding-bottom: 50px;
 }
